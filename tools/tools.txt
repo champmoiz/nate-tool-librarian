@@ -248,3 +248,4 @@ zfinix-another | Developer Tools | app | free | verified | Open-source Tauri and
 # rolling | Developer Tools | unknown | unknown | unverified | unable to research -- likely social media only
 # sqeezemotion | AI Model Platform | unknown | unknown | unverified | unable to research -- likely social media only (may refer to speech emotion recognition tools)
 openclaw | AI Agents & Frameworks | repo | open | verified | Self-hosted personal AI assistant that runs on your own devices with voice control, 20+ messaging channel integrations, and a live agent workspace canvas.
+

@@ -16,7 +16,8 @@ __pycache__/
 *.pyc
 
 # Docs (screenshots — local only for now)
-docs/
+docs/*.tmp
+docs/*.psd
 
 # Env
 .env
