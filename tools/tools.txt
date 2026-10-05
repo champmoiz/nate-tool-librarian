@@ -1,0 +1,250 @@
+# Nate's tool library
+# One tool per line, pipe-separated, EXACTLY 6 fields:
+#   name | category | type | pricing | verified/unverified | description
+# type:    repo | website | app | saas | list | skill | model | unknown
+# pricing: free | freemium | paid | open | unknown
+# Blank lines and lines starting with '#' are ignored by the loader.
+33-js-concepts | Learning & Curated Lists | list | free | verified | Curated list of 33 core JavaScript concepts every developer should know, with explanations and resources.
+3d-motion | UI Components & Design | website | free | verified | 3D motion or animation components for web.
+9-router | AI Agents & Frameworks | repo | open | verified | Free local AI proxy that routes Claude Code, Codex, and Cursor requests across 40+ AI providers with smart fallback to avoid rate limits. | llm router, claude code proxy, codex proxy, api gateway
+acontext-memory-layer | AI Agents & Frameworks | skill | open | verified | Context/memory layer component for agents. | agent memory, context layer, jarvis memory
+activepieces | Automation & Workflows | repo | open | verified | Open-source no-code/low-code automation platform (Zapier alternative).
+adescargar | Video & Media Production | website | free | verified | Website tool for downloading videos and media from various online platforms.
+agency-agents | AI Agents & Frameworks | repo | open | verified | Open-source collection of 61 specialized AI personas including frontend wizards and Reddit community ninjas that work together as one agency.
+agent-grid | AI Agents & Frameworks | website | freemium | verified | Shared workspace/canvas for humans and AI coding agents to create, review, and publish documents, apps, and websites.
+agent-reach | AI Agents & Frameworks | repo | open | verified | Open-source CLI that installs and routes free tools so AI agents can read platforms like Reddit, YouTube, X, and others without paid APIs.
+agenticseek | AI Agents & Frameworks | repo | open | verified | Fully local, voice-enabled autonomous AI assistant for web browsing, coding, and task planning with no cloud dependency.
+aleapp | Mobile Forensics & Devices | repo | open | verified | Android Logs Events And Protobuf Parser -- open-source tool for extracting artifacts from Android devices.
+alieneyes | OSINT & Investigations | repo | open | verified | AI-powered OSINT username scanner that checks for accounts across 840+ social media platforms using ML and heuristics.
+androidqf | Mobile Forensics & Devices | repo | open | verified | Android Quick Forensics -- open-source tool for collecting forensic data from Android devices for incident response.
+animaster | UI Components & Design | website | free | verified | Library or collection focused on web animations and micro-interactions.
+anti-slop | AI Agent Skills | skill | open | verified | Rules/skills set that filters generic AI-generated UI, copy, comments, and code patterns from agent outputs.
+apivault | Developer Tools | list | free | verified | Directory/collection of public APIs.
+appwrite | Backend & Infrastructure | repo | open | verified | Open-source self-hosted BaaS providing auth, databases, storage, functions, and more via Docker.
+autoclips | Video & Media Production | website | freemium | verified | Tool for automated clip generation from longer videos. | auto clip, shorts generator, video automation
+autoclips-claymation | AI Media Generation | website | freemium | verified | Specialized automated clip tool with claymation style.
+automaton | AI Agents & Frameworks | repo | open | verified | Self-improving autonomous AI agent that can edit its own source code, install tools, modify its heartbeat schedule, and create new skills while running. | self improving agent, autonomous agent, jarvis
+autonomous-code-aws | AI Agents & Frameworks | repo | open | verified | AWS sample project for running autonomous background coding agents with isolated runtimes, built-in orchestration, and observability.
+autoshorts | Video & Media Production | website | freemium | verified | Tool for automated short-form video creation.
+awesome-llm-apps | Learning & Curated Lists | list | free | verified | Curated collection of runnable AI agent, RAG, and LLM application examples and templates.
+awesome-web-hosting | Learning & Curated Lists | list | free | verified | Curated list of web hosting options and resources.
+bklit-ui | UI Components & Design | website | free | verified | UI component library or kit.
+book-to-skill | AI Agent Skills | skill | open | verified | Tool that converts technical books/PDFs/documents into structured, on-demand agent skills with frameworks and decision rules.
+brainstorming | AI Agent Skills | skill | open | verified | Skill supporting structured brainstorming with agents.
+browseruse | Browser Automation | repo | open | verified | Open-source framework that lets LLMs control a real browser (via Playwright) to navigate, click, and complete tasks autonomously. | browser agent, autonomous browsing, playwright agent, jarvis hands
+bruin | Developer Tools | repo | open | verified | Open-source data pipeline tool that combines data ingestion, SQL and Python transformations, and quality checks into a single framework.
+bruno | Developer Tools | repo | open | verified | Open-source API client (Postman alternative) that stores collections in plain text/Git.
+buildwith | Developer Tools | repo | open | verified | Python library that detects the technology stack used by a website, such as web servers, JavaScript frameworks, and content management systems.
+bytez | AI Models & Inference | saas | freemium | verified | Serverless API platform providing access to 220,000+ AI models for discovery, experimentation, and deployment through a single API key.
+cactus-needle | AI Models & Inference | model | open | verified | 26-million parameter open-source automation foundation model built for function calling on tiny devices like phones and wearables.
+caveman | AI Agent Skills | skill | open | verified | Terse or minimalist style skill for agents (often used as a control in benchmarks).
+chatwoot | Business & Operations | repo | open | verified | Open-source customer engagement and live-chat platform.
+chrome-devtools-mcp | Browser Automation | skill | open | verified | MCP-related tooling or integration around Chrome DevTools (context suggests agent/browser use).
+claude-mem | AI Agents & Frameworks | skill | open | verified | Persistent memory compression system/plugin for Claude Code (and similar agents) that captures session observations for cross-session continuity. | agent memory, session memory, jarvis memory
+claude-superpowers | AI Agent Skills | skill | open | verified | Collection of enhanced skills or capabilities for Claude-based agents.
+claudecodelocal | AI Agents & Frameworks | repo | open | verified | Tools and scripts for running Claude Code locally with Ollama and other local models instead of relying on paid API access. | local claude code, ollama coding agent
+claudecodesetup | AI Agents & Frameworks | repo | open | verified | Shared starter configuration templates for setting up Claude Code with custom CLAUDE.md files and project-specific settings.
+claudeflow | AI Agents & Frameworks | repo | open | verified | Open-source agent meta-harness for Claude Code that coordinates multiple AI agents simultaneously and manages autonomous workflows.
+cliphist | Knowledge & Productivity | repo | open | verified | Clipboard history manager (often for Wayland/Linux).
+clipshilp | Video & Media Production | website | freemium | verified | Website tool for AI-powered video clipping and short-form content creation.
+coder | AI Coding & App Builders | saas | freemium | verified | Platform for cloud development environments and remote coding workspaces.
+componentory | UI Components & Design | website | free | verified | Website offering collection of reusable web UI components for developers.
+composer-2-5 | AI Models & Inference | model | unknown | verified | Cursor's agentic coding model built on Moonshot's open-source Kimi K2.5 checkpoint for planning, editing files, running terminal commands, and verifying work.
+core-cli | Developer Tools | repo | open | verified | AI-powered terminal task manager with persistent memory across sessions that remembers projects, preferences, and context.
+cortex | Cybersecurity & Pentesting | repo | open | verified | Open-source observable analysis and response engine that integrates with TheHive.
+crawl4ai | Web Scraping & Crawling | repo | open | verified | Open-source asynchronous crawler optimized for producing clean markdown and structured data for AI/RAG pipelines.
+crawlee | Web Scraping & Crawling | repo | open | verified | Open-source library (JS/TS and Python) for building reliable web crawlers and scrapers with browser support.
+crt-sh | OSINT & Investigations | website | free | verified | Certificate Transparency log search service for discovering domains and subdomains.
+d-id | AI Media Generation | saas | freemium | verified | Platform for generating talking-head videos and digital avatars from text or audio.
+darkogx | Video & Media Production | repo | open | verified | Fully automated YouTube channel management AI agent that researches topics, writes scripts, generates narration and visuals, and publishes videos 24/7.
+daytona | Backend & Infrastructure | repo | open | verified | Secure elastic sandbox infrastructure for running AI-generated code and agent workflows with isolated environments.
+decepticon | OSINT & Investigations | repo | open | verified | Open-source autonomous red team hacking agent that executes realistic attack chains including reconnaissance, exploitation, and privilege escalation.
+deepdiagram | UI Components & Design | repo | open | verified | Tool for generating or analyzing deep diagrams from code or data.
+defenseclaw | Cybersecurity & Pentesting | repo | open | verified | Cisco open-source governance layer for AI coding agents that scans skills, MCP servers, plugins, and generated code before they run.
+deploytovercel | AI Agent Skills | skill | open | verified | Skill or workflow for deploying projects to Vercel.
+devdock | Developer Tools | repo | open | verified | Python library and CLI tool for managing development containers with Docker images and Docker Compose configurations.
+dialkit | Developer Tools | repo | open | verified | Floating control panel library for React, Solid, Svelte, and Vue that lets developers tune interface parameters, animation timing, and easing curves live.
+ditto-site | UI Components & Design | repo | open | verified | Tool that turns a public URL into a self-contained TypeScript app by capturing what the browser rendered and emitting a deterministic Next.js application.
+dnsdumper | OSINT & Investigations | repo | open | verified | Tool for DNS enumeration and dumping related records.
+documenso | Knowledge & Productivity | repo | open | verified | Open-source electronic signature and document signing platform.
+duixavatar | AI Media Generation | repo | open | verified | Tool or model for creating digital avatars.
+dupe | Developer Tools | repo | open | verified | Go library that scaffolds isolated task runtimes with worktrees, free ports, and private SQLite databases for parallel development tasks.
+dyad | AI Coding & App Builders | repo | open | verified | Local open-source AI app builder for creating web apps from prompts, running on the user's machine as an alternative to v0/Lovable/Bolt.
+easy-peasy | UI Components & Design | repo | open | verified | Redux abstraction for React that provides a reimagined API focused on developer experience for managing application state with less boilerplate.
+ecc | AI Agents & Frameworks | repo | open | verified | Open-source cross-harness agent framework with 260+ skills, structured workflows, session memory, and security scanning for AI coding tools.
+edx | Learning & Curated Lists | website | freemium | verified | Open online course platform and learning management system.
+entrance-reveal | UI Components & Design | website | free | verified | Animation components for entrance/reveal effects.
+epieos | OSINT & Investigations | website | free | verified | Tool for looking up information associated with emails or phone numbers.
+excalidraw | UI Components & Design | repo | open | verified | Open-source virtual whiteboard with a hand-drawn aesthetic for collaborative sketching and diagrams.
+facecheck-id | OSINT & Investigations | website | freemium | verified | Service for reverse image search of faces across the internet.
+fancy-components | UI Components & Design | website | free | verified | Collection of decorative or advanced UI components.
+findskills | AI Agent Skills | skill | open | verified | Tool or skill for discovering other agent skills.
+firecrawl | Web Scraping & Crawling | repo | freemium | verified | Tool (open-source engine + hosted) that turns websites into clean markdown or structured JSON for LLM use.
+flowsint | OSINT & Investigations | repo | open | verified | Open-source graph-based OSINT investigation platform for cybersecurity analysts that lets users explore relationships and automate investigation workflows.
+freellmpi | AI Models & Inference | repo | open | verified | Open-source tool that collapses multiple free LLM API endpoints into one OpenAI-compatible endpoint with automatic routing and failover. | free llm api, llm router, multi provider
+g0dm0d3 | AI Models & Inference | repo | open | verified | Fully open-source privacy-transparent multi-model chat interface for running 50+ AI models in parallel for red teaming and cognition experiments.
+getdesign | UI Components & Design | website | free | verified | Resource or tool for design assets/inspiration.
+getlayers | UI Components & Design | website | free | verified | Resource related to design layers or assets.
+ghosteye | OSINT & Investigations | repo | open | verified | Information gathering and reconnaissance tool written in Python that performs footprinting, scanning, banner grabbing, and OS detection from a domain or IP.
+gitdiagram | Developer Tools | repo | open | verified | Tool for generating diagrams from Git repositories or code structure.
+glossopetrae | AI Models & Inference | repo | open | verified | Procedural xenolinguistics engine that generates complete constructed languages with phonology, grammar, and dictionaries for use with AI agents.
+god-eye-view | OSINT & Investigations | repo | open | verified | Open-source 3D globe visualization that fuses live aircraft, ships, satellites, earthquakes, fires, and public cameras from public APIs.
+goose | AI Agents & Frameworks | repo | open | verified | Open-source extensible AI agent (desktop app, CLI, API) for coding, workflows, and automation that works with multiple LLMs and MCP extensions. | ai agent, autonomous agent, jarvis brain, claude, mcp
+gotenberg | Knowledge & Productivity | repo | open | verified | Open-source API for converting documents (HTML, Markdown, Office) to PDF and other formats.
+grapheneos | Privacy & Security Tools | app | free | verified | Privacy and security-focused Android-based mobile operating system with hardened features.
+graphify | Developer Tools | repo | open | verified | Open-source tool that turns codebases (plus docs/PDFs) into a queryable knowledge graph for AI coding assistants via MCP.
+h4cker | OSINT & Investigations | list | free | verified | Curated repository of thousands of resources for ethical hacking, bug bounties, digital forensics, and AI security maintained by Omar Santos.
+hexabot | Automation & Workflows | repo | open | verified | Open-source chatbot and conversational AI platform.
+howeeffect | UI Components & Design | website | free | verified | Collection of hover or interactive UI effects.
+humanizer | AI Agent Skills | skill | open | verified | Skill aimed at making AI output sound more natural/human.
+ileapp | Mobile Forensics & Devices | repo | open | verified | iOS Logs Events And Protobuf Parser -- open-source tool for extracting artifacts from iOS devices.
+impeccable-taste | UI Components & Design | skill | open | verified | Claude Code skill that gives AI coding agents good frontend design taste to stop generating generic interfaces and build premium-looking interfaces.
+infisical | Backend & Infrastructure | repo | open | verified | Open-source platform for managing secrets, configs, and environment variables across teams and environments.
+intelbase | OSINT & Investigations | website | freemium | verified | OSINT platform and bot that turns a single email into a rich actionable footprint with timeline insights for security investigations.
+intelligence-x | OSINT & Investigations | website | freemium | verified | Search engine and data archive focused on dark web, leaks, and public sources.
+iq | Developer Tools | repo | open | verified | Multi-threaded command-line tool for resampling, filtering, shifting, correcting, and demodulating I/Q data streams for software-defined radio work.
+jem-ultrafast | Browser Automation | repo | open | verified | Fastest and cheapest web agent with a dynamic indexed action space that picks operations and elements without generating coordinates or selectors.
+jitter | UI Components & Design | saas | freemium | verified | Tool for creating motion graphics and animations (more design-oriented).
+katana | Web Scraping & Crawling | repo | open | verified | Fast open-source web crawler focused on URL and endpoint discovery (often used in security contexts).
+keepassxc | Privacy & Security Tools | app | free | verified | Cross-platform open-source password manager with browser integration and strong cryptography.
+kikivoice | AI Media Generation | website | freemium | verified | Voice synthesis or related tool. | voice synthesis, tts
+kilo-cli | AI Agents & Frameworks | repo | open | verified | Open-source AI coding agent CLI that works in the terminal and provides access to 500+ AI models with bring-your-own-key pricing. | coding agent, ai coding cli
+kittl | UI Components & Design | saas | freemium | verified | Online design platform focused on graphic design and product mockups (more commercial).
+kokonut-ui | UI Components & Design | website | free | verified | UI component library or kit.
+kopia | Knowledge & Productivity | repo | open | verified | Open-source cross-platform backup tool with encryption, deduplication, and support for various storage backends.
+laya-coreml | AI Models & Inference | model | open | verified | Core ML port of the Laya typed decision model that runs local AI decisions on Apple's Neural Engine at about 5 milliseconds with zero network calls.
+lcn | AI Models & Inference | repo | open | verified | Logical Credal Networks probabilistic logic from IBM that generalizes formalisms combining logic and probability for uncertain reasoning.
+leakix | OSINT & Investigations | website | freemium | verified | Search engine for publicly exposed services, leaks, and vulnerabilities.
+libsql | Backend & Infrastructure | repo | open | verified | Open-source fork of SQLite with additional features (used by Turso and others) for distributed/edge use.
+lightswind | UI Components & Design | website | free | verified | Tailwind-related UI components or effects.
+litellm | AI Models & Inference | repo | open | verified | Open-source library and proxy for calling and load-balancing 100+ LLM providers with a unified API, routing, and fallbacks. | llm proxy, llm router, multi provider, api gateway
+livelocationtracker | OSINT & Investigations | repo | open | verified | GitHub tool for tracking live location data and displaying it on maps.
+lorien | Developer Tools | app | free | verified | Infinite canvas drawing and note-taking application for Windows, Linux, and macOS built with Godot focused on performance and small savefiles.
+ltx-2-5 | AI Media Generation | model | open | verified | LTX video generation model variant. | ai video generation, text to video
+maildev | Developer Tools | repo | open | verified | Simple SMTP server and web UI for catching and viewing emails during development.
+make | Automation & Workflows | saas | freemium | verified | Visual no-code/low-code automation platform (formerly Integromat) for connecting apps and building workflows.
+maltego | OSINT & Investigations | app | freemium | verified | Graphical tool for visual link analysis and relationship discovery across people, infrastructure, and entities using transforms. | link analysis, osint graph, relationship mapping
+mattpocock-skills | AI Agent Skills | skill | open | verified | Skills or prompt collections associated with developer Matt Pocock (TypeScript/AI tooling focused).
+maxun | Web Scraping & Crawling | repo | open | verified | Open-source no-code web data extraction platform that turns any website into a structured API for scraping, crawling, monitoring, and AI data extraction.
+mbt | Developer Tools | repo | open | verified | SAP Cloud MTA Build Tool CLI for building multi-target applications on SAP Business Technology Platform with Node.js runtime support.
+micro-interaction | UI Components & Design | website | free | verified | Collection focused on micro-interactions for interfaces.
+mindluster | Learning & Curated Lists | website | freemium | verified | Online learning platform with courses.
+misp | Cybersecurity & Pentesting | repo | open | verified | Open-source threat intelligence sharing platform for indicators and events.
+mobile-verification-toolkit | Mobile Forensics & Devices | repo | open | verified | Toolkit related to mobile device verification or analysis (context suggests security/OSINT use).
+mullvad-browser | Privacy & Security Tools | app | free | verified | Privacy-focused browser developed with the Tor Project, based on Firefox with anti-tracking hardening.
+n8n-local | Automation & Workflows | repo | open | verified | Self-hosted/local usage of n8n, the open-source workflow automation tool.
+nanobot | AI Agents & Frameworks | repo | open | verified | Ultra-lightweight open-source self-hosted personal AI agent framework in Python with WebUI, terminal support, and long-running workflow capabilities. | personal ai agent, self hosted agent, jarvis brain
+no-ai-slop | AI Agent Skills | skill | open | verified | Skill that removes common AI-writing patterns (filler, binary contrasts, throat-clearing) from text while preserving personal voice.
+nvidia-nim | AI Models & Inference | saas | freemium | verified | NVIDIA's optimized inference microservices for running generative AI models efficiently.
+obscura | Browser Automation | repo | open | verified | Open-source headless browser engine written in Rust for AI agent automation and web scraping that runs real JavaScript via V8. | headless browser, browser agent, jarvis hands
+obsidian | Knowledge & Productivity | app | freemium | verified | Local-first Markdown-based knowledge base and note-taking application with graph view and plugins. | notes, knowledge base, second brain
+oh-my-cli | Developer Tools | repo | open | verified | Framework or collection enhancing command-line interfaces (context suggests developer tooling).
+omarchy | Privacy & Security Tools | app | free | verified | Beautiful opinionated agentic Linux distribution by DHH based on Arch Linux and Hyprland tiling window manager with everything developers need.
+omniroute | AI Models & Inference | repo | open | verified | Free open-source AI gateway that routes OpenAI-compatible requests through a local proxy with automatic fallback across 359 providers and 1200+ models. | llm gateway, multi provider, api router
+omnivoice | AI Media Generation | repo | open | verified | Multi-voice or open voice synthesis tool. | multi voice tts, voice synthesis, jarvis voice
+open-code-review | AI Coding & App Builders | repo | open | verified | Tool focused on AI-assisted code review.
+open-droid | AI Agents & Frameworks | repo | open | verified | Fully autonomous AI agent that lives on Android phones and performs real tasks like checking conditions and taking actions on the device.
+open-free-llm-api | AI Models & Inference | list | free | verified | Curated directory of 134+ free LLM APIs with rate limits, context windows, and one-click configuration snippets for OpenAI-compatible endpoints. | free llm apis, llm directory
+open-montage | Video & Media Production | repo | open | verified | Open-source video montage or editing tool.
+open-notebook | Knowledge & Productivity | repo | open | verified | Self-hosted open-source alternative to Google NotebookLM for private multi-modal research, chat, and multi-speaker podcast generation.
+open-voice | AI Media Generation | repo | open | verified | Open-source voice synthesis or cloning related project. | voice clone, tts, voice synthesis, jarvis voice
+opencode | AI Coding & App Builders | repo | open | verified | Open-source or community tools related to code generation/review with AI agents. | coding agent, ai coding, terminal agent
+opencti | Cybersecurity & Pentesting | repo | open | verified | Open-source cyber threat intelligence platform for managing and visualizing STIX knowledge.
+openflowkit | Developer Tools | repo | open | verified | 100% free open-source local-first AI diagramming studio for creating architecture diagrams, flowcharts, and system design with editable exports.
+opengenerativeai | AI Models & Inference | repo | open | verified | Free open-source AI image, video, cinema, and lip sync studio with no content filters that provides creative workflows using 200+ models.
+openmanus | AI Agents & Frameworks | repo | open | verified | Open-source general-purpose AI agent framework for task solving with tools and multi-agent support, positioned as a Manus alternative. | general agent, autonomous agent, jarvis brain
+openmanusbot | AI Agents & Frameworks | repo | open | verified | Open-source Grok Bot alternative with a team of AI agents in a chat app running on your own machine with your own API keys. | personal agent, chat agents, jarvis
+openosint | OSINT & Investigations | repo | open | verified | Open-source OSINT framework with 20 tools, MCP server for Claude, and AI-powered REPL for investigating emails, IPs, domains, and usernames. | osint framework, email recon, domain recon
+openship | Developer Tools | repo | open | verified | Open-source self-hosted deployment platform with built-in CI/CD that detects your stack, builds Docker containers, and provisions databases automatically.
+openshorts | Video & Media Production | website | freemium | verified | Tool related to generating or managing short-form video content. | shorts generator, video automation
+openwhispr | Speech-to-Text | repo | open | verified | Open-source speech recognition / Whisper-related tool. | speech to text, stt, whisper, voice input, jarvis ears
+opnsense | Privacy & Security Tools | app | free | verified | Open-source firewall and routing platform based on FreeBSD.
+oraclecloud | Backend & Infrastructure | saas | freemium | verified | Oracle's public cloud platform offering compute, AI, and database services.
+osint360-gpt | OSINT & Investigations | website | freemium | verified | GPT-powered AI assistant for OSINT, digital forensics, cyber investigations, threat intelligence, ethical hacking, and red teaming operations.
+parallax-effect | UI Components & Design | website | free | verified | Components or libraries implementing parallax scrolling effects.
+penpot | UI Components & Design | repo | freemium | verified | Open-source design and prototyping platform (Figma alternative) with real-time collaboration and developer handoff.
+photopea | UI Components & Design | website | free | verified | Free online advanced image editor that runs in the browser and supports PSD and many formats.
+pi-desktop | AI Agents & Frameworks | app | free | verified | Free open-source Electron desktop GUI for Pi coding agents with chat, file management, command execution, and parallel agent threads.
+pinchtab | Browser Automation | repo | open | verified | High-performance browser automation bridge and orchestrator written in Go that exposes a 12MB standalone binary HTTP API for controlling Chrome. | browser automation, chrome control, jarvis hands
+pipecat | AI Agents & Frameworks | repo | open | verified | Open-source Python framework for building real-time voice and multimodal conversational agents with pluggable services and multi-agent pipelines. | voice agent, voice assistant, realtime conversational ai, jarvis, speech pipeline
+playwright | Browser Automation | repo | open | verified | Cross-browser automation library for reliable end-to-end testing and scraping with Chromium, Firefox, and WebKit. | browser automation, e2e testing, jarvis hands
+plexo | Knowledge & Productivity | app | free | verified | Fast open-source download manager for Windows, macOS, and Linux that speeds up downloads by pulling chunks in parallel across multiple network connections.
+pocketbase | Backend & Infrastructure | repo | open | verified | Lightweight open-source backend in a single Go binary with embedded SQLite, auth, realtime, and file storage.
+polar | Business & Operations | repo | open | verified | Open-source platform for monetizing open-source software (subscriptions, payments).
+ponytail | AI Agent Skills | skill | open | verified | Agent skill/plugin that forces coding agents toward minimal YAGNI-style code by applying a "lazy senior developer" decision ladder.
+presenton | Knowledge & Productivity | website | freemium | verified | AI-assisted presentation creation tool.
+projectnomad | Knowledge & Productivity | repo | open | verified | Self-contained offline-first knowledge server that bundles Wikipedia, textbooks, offline maps, and an optional local AI assistant on your own hardware. | offline wikipedia, offline ai, offline knowledge, jarvis offline mode
+publicapis | Developer Tools | list | free | verified | Curated collection of free public APIs for developers.
+pymobiledevice3 | Mobile Forensics & Devices | repo | open | verified | Python library for communicating with and controlling iOS devices.
+qubesos | Privacy & Security Tools | app | free | verified | Security-focused OS that uses Xen virtualization to isolate applications into compartments (qubes).
+qwen-8-2 | AI Models & Inference | model | open | verified | Specific version in the Qwen open large language model series.
+qwen-code | AI Models & Inference | model | open | verified | Qwen series of open large language models (code-specialized) from Alibaba.
+rapidapi | Developer Tools | saas | freemium | verified | Marketplace and platform for discovering, testing, and connecting to APIs.
+reditosint | OSINT & Investigations | website | freemium | verified | OSINT platform for Reddit user intelligence, associated with rosint.dev.
+reflex | Developer Tools | repo | open | verified | Open-source Python framework for building full-stack web apps purely in Python.
+remotion | Video & Media Production | repo | open | verified | Open-source React-based framework for programmatically creating videos. | programmatic video, react video, code to video
+reverse-skill | AI Agent Skills | skill | open | verified | Skill router package that directs AI agents to correct reverse-engineering, authorized pentesting, or security research methodologies and tools.
+robin | OSINT & Investigations | repo | open | verified | AI-powered open-source tool for dark web OSINT investigations that leverages LLMs to refine queries and filter results from dark web search engines.
+rosint | OSINT & Investigations | repo | open | verified | Open-source Reddit user intelligence tool that searches any Reddit user's full post and comment history including private accounts and deleted content.
+scout | OSINT & Investigations | repo | open | verified | Open-source company intelligence agent that navigates live information sources like web, Slack, Drive, wiki, CRM, and MCP servers to assemble context.
+scrapegraphai | Web Scraping & Crawling | repo | open | verified | Open-source Python library that uses LLMs and graphs to extract structured data from websites via natural language.
+scrapy | Web Scraping & Crawling | repo | open | verified | Mature open-source Python framework for large-scale web scraping and structured data extraction.
+seonaai | UI Components & Design | website | freemium | verified | Comprehensive SEO analysis toolkit with 17 specialized AI-driven audit modules and a real-time web dashboard for deep site audits.
+shadowdragon | OSINT & Investigations | saas | paid | verified | Open-source intelligence software platform for investigators that provides public data collection, link analysis, and social media monitoring capabilities.
+shodan | OSINT & Investigations | website | freemium | verified | Search engine that indexes internet-connected devices, services, and banners for reconnaissance. | iot search engine, device search, internet scanner, banner grab
+skills-agent | AI Agents & Frameworks | skill | open | verified | Open-standard agent skills format providing production-grade engineering skills, instructions, and scripts that AI agents load dynamically for specialized tasks.
+skiper-ui | UI Components & Design | website | free | verified | UI component library or kit.
+skydive | Privacy & Security Tools | repo | open | verified | Open-source real-time network topology and protocol analyzer.
+skyreelsv2 | AI Media Generation | model | open | verified | AI video generation model or tool (SkyReels series). | ai video generation, text to video
+smoothloader | UI Components & Design | website | free | verified | Smooth loading animation components.
+spiderfoot | OSINT & Investigations | repo | open | verified | Open-source OSINT automation tool that gathers intelligence on IPs, domains, emails, and more. | osint automation, recon framework, footprinting
+sqlmap | Cybersecurity & Pentesting | repo | open | verified | Open-source penetration testing tool that automates detection and exploitation of SQL injection flaws.
+statusnook | Developer Tools | repo | open | verified | Open-source status page tool.
+strix | Cybersecurity & Pentesting | repo | open | verified | Open-source autonomous AI penetration testing tool with agents that act like real hackers, run code dynamically, find vulnerabilities, and validate them with proofs.
+styles-refero | UI Components & Design | website | free | verified | Style or design reference collection.
+supabase | Backend & Infrastructure | repo | freemium | verified | Open-source Firebase alternative built on PostgreSQL with auth, realtime, storage, and edge functions.
+supermemory | AI Agents & Frameworks | repo | open | verified | Memory layer or system for AI agents. | agent memory, persistent memory, long term memory, jarvis memory
+supertonic | AI Media Generation | model | open | verified | Lightning-fast on-device open-weight text-to-speech model with 99 million parameters that runs on CPU via ONNX Runtime in 31 languages with no GPU needed. | tts, text to speech, on-device voice, fast voice, jarvis voice
+swishy | Video & Media Production | saas | freemium | verified | AI-powered motion design and animation platform for creating professional motion graphics, animated typefaces, and stunning video animations in the browser.
+systemdesign101 | Learning & Curated Lists | list | free | verified | Educational resource or repository covering system design fundamentals.
+tdd | AI Agent Skills | skill | open | verified | Test-driven development focused skill for coding agents.
+termly | Business & Operations | saas | freemium | verified | Platform for generating privacy policies, cookie consent, and compliance documents.
+termsfeed | Business & Operations | website | freemium | verified | Generator for terms of service, privacy policies, and related legal documents.
+tesena | Developer Tools | website | freemium | verified | Open-source testing and QA consultancy with smart testing tools including resume builder, visual testing library for Robot Framework, and healthcheck automation.
+thehive | Cybersecurity & Pentesting | repo | open | verified | Open-source security incident response and case management platform for SOC/CSIRT teams.
+tinytts | AI Media Generation | repo | open | verified | Lightweight or open text-to-speech tool. | tts, lightweight voice, on-device voice, jarvis
+tokenharbour | AI Models & Inference | saas | freemium | verified | AI token usage and cost tracking platform (tokenharbor.ai).
+tolaria | Developer Tools | app | free | verified | Free open-source cross-platform desktop app for managing markdown knowledge bases with native relationships, Git support, and direct AI model providers. | markdown knowledge base, second brain
+twenty | Business & Operations | repo | open | verified | Open-source CRM alternative focused on modern sales and customer management.
+ufade | OSINT & Investigations | repo | open | verified | Universal Forensic Apple Device Extractor open-source Python GUI tool for extracting files from iOS devices and creating iTunes-style backups.
+uiball | UI Components & Design | website | free | verified | Collection of pure CSS or lightweight UI loaders and spinners.
+uiux-promax | UI Components & Design | website | free | verified | UI/UX resource or prompt collection.
+uiverse | UI Components & Design | website | free | verified | Collection of open-source UI components and elements for web development.
+uncensored | AI Models & Inference | app | free | verified | All-in-one local AI studio desktop app for chat, image and video generation, and coding agent that runs entirely locally with zero censorship.
+uniface | AI Models & Inference | repo | open | verified | Lightweight production-ready Python library for unified face detection, recognition, tracking, landmark analysis, face parsing, gaze estimation, and face reenactment.
+unorouter | AI Models & Inference | repo | open | verified | Open-source OpenAI-compatible LLM gateway providing unified access to over 300 AI models from multiple providers through a single API key. | llm gateway, multi provider, api router
+urlscan | URL/Website Analysis | website | freemium | verified | Service for scanning and analyzing URLs, capturing screenshots, and detecting threats.
+usb-uncensored-llm | AI Models & Inference | repo | open | verified | Fully air-gapped zero-dependency plug-and-play local AI environment that runs uncensored LLMs directly from a USB flash drive with no internet after setup.
+userrecon | OSINT & Investigations | repo | open | verified | Tool for username reconnaissance across multiple platforms.
+v0 | AI Coding & App Builders | saas | freemium | verified | Vercel's AI-powered UI generation tool that creates React components from text prompts.
+wan-ai | AI Models & Inference | saas | freemium | verified | AI research or model provider (context suggests generative models).
+watabou | Procedural Generation | website | free | verified | Creator of procedural generation tools (e.g., fantasy maps, cities).
+wazuh | Cybersecurity & Pentesting | repo | open | verified | Open-source XDR/SIEM platform for endpoint detection, log analysis, and compliance.
+webquality | AI Agent Skills | skill | open | verified | Skill focused on web quality, accessibility, or performance checks.
+whapa | Mobile Forensics & Devices | repo | open | verified | WhatsApp Parser -- tool for extracting and analyzing WhatsApp data from mobile backups.
+whatsmyname | OSINT & Investigations | repo | open | verified | Open-source tool/check for username presence across many websites.
+wireflow | UI Components & Design | website | free | verified | Tool for creating wireflows or interaction diagrams.
+yesitsme | OSINT & Investigations | repo | open | verified | Simple Python OSINT script that finds Instagram accounts associated with a specific name, email address, or phone number for investigations.
+youtube-automation-agent | Video & Media Production | repo | open | verified | Agent or tool for automating YouTube-related tasks (content, posting, etc.).
+zapier-ai | Automation & Workflows | saas | freemium | verified | AI-enhanced features within Zapier for no-code workflow automation across apps.
+zfinix-another | Developer Tools | app | free | verified | Open-source Tauri and Rust desktop app for mirroring and controlling Android devices over USB with a clean interface and zero latency.
+
+# === RESEARCH-FAILED / DO NOT EMBED ===
+# agenticos | AI Agent Frameworks | unknown | unknown | unverified | unable to research -- likely social media only
+# anydog | Unknown | unknown | unknown | unverified | unable to research -- likely social media only
+# decibel-cli | Developer Tools | unknown | unknown | unverified | unable to research -- likely social media only
+# githubdesigns | Unknown | unknown | unknown | unverified | unable to research -- likely refers to GitHub's design team account
+# never-stop-coding | AI Agent Frameworks | unknown | unknown | unverified | unable to research -- likely social media only (may refer to OmniRoute AI gateway)
+# rolling | Developer Tools | unknown | unknown | unverified | unable to research -- likely social media only
+# sqeezemotion | AI Model Platform | unknown | unknown | unverified | unable to research -- likely social media only (may refer to speech emotion recognition tools)
+openclaw | AI Agents & Frameworks | repo | open | verified | Self-hosted personal AI assistant that runs on your own devices with voice control, 20+ messaging channel integrations, and a live agent workspace canvas.

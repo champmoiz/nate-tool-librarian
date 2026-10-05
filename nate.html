@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nate</title>
+<style>
+  @font-face {
+    font-family: 'Barrio';
+    src: url('./Barrio-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0606;
+    --bg-2: #141414;
+    --bg-3: #1c1c1c;
+    --red: #d41f2a;
+    --red-dark: #8b0f17;
+    --red-glow: #ff2e3a;
+    --text: #e8e8e8;
+    --text-dim: #8a8a8a;
+    --border: #2a2a2a;
+  }
+
+  html, body {
+    height: 100%;
+    background-color: #0a0606;
+    background-image:
+      radial-gradient(ellipse at top left, rgba(212, 31, 42, 0.20) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(212, 31, 42, 0.14) 0%, transparent 55%),
+      linear-gradient(135deg, #0a0606 0%, #140505 45%, #0a0606 100%);
+    background-size: cover, cover, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed;
+    color: var(--text);
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('./background.jpg') center/cover no-repeat fixed;
+    opacity: 0.85;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 4, 4, 0.35);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  #app {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(6, 4, 4, 0.92);
+    backdrop-filter: blur(10px);
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .brand h1 {
+    font-family: 'Barrio', 'Impact', sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: var(--red);
+    text-shadow: 0 0 20px rgba(212, 31, 42, 0.5);
+    line-height: 1;
+    font-weight: normal;
+  }
+
+  .brand .tagline {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-dim);
+  }
+
+  #newChat {
+    background: transparent;
+    border: 1px solid var(--red-dark);
+    color: var(--red);
+    padding: 8px 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: inherit;
+  }
+
+  #newChat:hover {
+    background: var(--red-dark);
+    color: var(--text);
+    border-color: var(--red);
+  }
+
+  #chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    scroll-behavior: smooth;
+    background: rgba(6, 4, 4, 0.35);
+    backdrop-filter: blur(6px);
+  }
+
+  #chat::-webkit-scrollbar { width: 8px; }
+  #chat::-webkit-scrollbar-track { background: var(--bg-2); }
+  #chat::-webkit-scrollbar-thumb { background: var(--red-dark); }
+  #chat::-webkit-scrollbar-thumb:hover { background: var(--red); }
+
+  .msg {
+    max-width: 80%;
+    padding: 14px 18px;
+    line-height: 1.55;
+    font-size: 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 2px;
+    animation: fadeIn 0.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .msg.user {
+    align-self: flex-end;
+    background: var(--red-dark);
+    border-left: 3px solid var(--red);
+    color: #fff;
+  }
+
+  .msg.nate {
+    align-self: flex-start;
+    background: var(--bg-3);
+    border-left: 3px solid var(--red);
+    color: var(--text);
+  }
+
+  .msg.nate .who {
+    font-family: 'Barrio', 'Impact', sans-serif;
+    color: var(--red);
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .msg.system {
+    align-self: center;
+    background: transparent;
+    color: var(--text-dim);
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    border: none;
+    max-width: 100%;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background: var(--red);
+    animation: blink 0.7s infinite;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  #input-bar {
+    padding: 18px 24px 24px;
+    border-top: 1px solid var(--border);
+    background: rgba(6, 4, 4, 0.95);
+    backdrop-filter: blur(10px);
+  }
+
+  #input-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  #input {
+    flex: 1;
+    background: rgba(6, 4, 4, 0.85);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 12px 16px;
+    font-size: 15px;
+    font-family: inherit;
+    resize: none;
+    outline: none;
+    border-radius: 2px;
+    max-height: 140px;
+    min-height: 44px;
+    line-height: 1.4;
+    transition: border-color 0.15s;
+  }
+
+  #input:focus {
+    border-color: var(--red-dark);
+    box-shadow: 0 0 0 2px rgba(212, 31, 42, 0.15);
+  }
+
+  #input::placeholder {
+    color: var(--text-dim);
+  }
+
+  #send, #stop {
+    background: var(--red);
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 44px;
+    transition: all 0.15s;
+    font-family: inherit;
+    border-radius: 2px;
+  }
+
+  #send:hover:not(:disabled) {
+    background: var(--red-glow);
+    box-shadow: 0 0 20px rgba(212, 31, 42, 0.4);
+  }
+
+  #send:disabled {
+    background: var(--bg-3);
+    color: var(--text-dim);
+    cursor: not-allowed;
+  }
+
+  #stop {
+    background: transparent;
+    border: 1px solid var(--red);
+    color: var(--red);
+    display: none;
+  }
+
+  #stop:hover {
+    background: var(--red-dark);
+    color: #fff;
+    box-shadow: 0 0 16px rgba(212, 31, 42, 0.5);
+  }
+
+  .status {
+    text-align: center;
+    font-size: 11px;
+    color: var(--text-dim);
+    padding: 6px 0 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .status.error { color: var(--red); }
+  .status.ok { color: #3a9d3a; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <h1>NATE</h1>
+      <span class="tagline">tool librarian</span>
+    </div>
+    <button id="newChat">New Chat</button>
+  </header>
+
+  <div id="chat"></div>
+
+  <div id="input-bar">
+    <div id="input-row">
+      <textarea id="input" placeholder="Ask Nate about tools..." rows="1"></textarea>
+      <button id="send">Send</button>
+      <button id="stop">Stop</button>
+    </div>
+    <div class="status" id="status">ready</div>
+  </div>
+</div>
+
+<script>
+// Point at the Nate server (Flask service running on this PC)
+const NATE_SERVER = 'http://localhost:5000';
+
+const chatEl = document.getElementById('chat');
+const inputEl = document.getElementById('input');
+const sendEl = document.getElementById('send');
+const stopEl = document.getElementById('stop');
+const statusEl = document.getElementById('status');
+const newChatEl = document.getElementById('newChat');
+
+let history = [];
+let isGenerating = false;
+let currentAbort = null;
+
+function setStatus(text, type) {
+  statusEl.textContent = text;
+  statusEl.className = 'status' + (type ? ' ' + type : '');
+}
+
+function setGenerating(on) {
+  isGenerating = on;
+  if (on) {
+    sendEl.style.display = 'none';
+    stopEl.style.display = 'inline-block';
+  } else {
+    sendEl.style.display = 'inline-block';
+    stopEl.style.display = 'none';
+    currentAbort = null;
+  }
+}
+
+function addMessage(role, text, opts = {}) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + role;
+
+  if (role === 'nate') {
+    const who = document.createElement('span');
+    who.className = 'who';
+    who.textContent = 'NATE';
+    div.appendChild(who);
+  }
+
+  const content = document.createElement('span');
+  content.textContent = text;
+  div.appendChild(content);
+
+  if (opts.typing) {
+    const cursor = document.createElement('span');
+    cursor.className = 'cursor';
+    div.appendChild(cursor);
+    div._cursor = cursor;
+    div._content = content;
+  }
+
+  chatEl.appendChild(div);
+  chatEl.scrollTop = chatEl.scrollHeight;
+  return div;
+}
+
+function autoResize() {
+  inputEl.style.height = 'auto';
+  inputEl.style.height = Math.min(inputEl.scrollHeight, 140) + 'px';
+}
+
+inputEl.addEventListener('input', autoResize);
+
+inputEl.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    send();
+  }
+});
+
+sendEl.addEventListener('click', send);
+
+stopEl.addEventListener('click', () => {
+  if (currentAbort) currentAbort.abort();
+});
+
+newChatEl.addEventListener('click', () => {
+  if (isGenerating) return;
+  history = [];
+  chatEl.innerHTML = '';
+  addMessage('system', 'New session. What are we building, bud?');
+  setStatus('ready');
+  inputEl.focus();
+});
+
+async function send() {
+  const text = inputEl.value.trim();
+  if (!text || isGenerating) return;
+
+  inputEl.value = '';
+  autoResize();
+  inputEl.focus();
+
+  addMessage('user', text);
+  history.push({ role: 'user', content: text });
+
+  setGenerating(true);
+  currentAbort = new AbortController();
+
+  const nateDiv = addMessage('nate', '', { typing: true });
+  const contentEl = nateDiv._content;
+  const cursorEl = nateDiv._cursor;
+
+  let fullText = '';
+
+  try {
+    setStatus('thinking...');
+
+    const response = await fetch(NATE_SERVER + '/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        messages: history,
+        stream: true,
+      }),
+      signal: currentAbort.signal,
+    });
+
+    if (!response.ok) {
+      throw new Error('Nate server returned ' + response.status);
+    }
+
+    setStatus('responding...');
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop();
+
+      for (const line of lines) {
+        if (!line.trim()) continue;
+        try {
+          const json = JSON.parse(line);
+          if (json.message && json.message.content) {
+                        const cleaned = json.message.content
+              .replace(/\*\*/g, '')
+              .replace(/`/g, '')
+              .replace(/^\s*[-•]\s+/gm, '- ');
+            fullText += cleaned;
+            contentEl.textContent = fullText;
+            chatEl.scrollTop = chatEl.scrollHeight;
+          }
+        } catch (err) {
+          // skip malformed chunks
+        }
+      }
+    }
+
+    if (cursorEl && cursorEl.parentNode) {
+      cursorEl.parentNode.removeChild(cursorEl);
+    }
+
+    if (fullText) {
+      history.push({ role: 'assistant', content: fullText });
+    }
+
+    setStatus('ready', 'ok');
+  } catch (err) {
+    if (cursorEl && cursorEl.parentNode) {
+      cursorEl.parentNode.removeChild(cursorEl);
+    }
+
+    if (err.name === 'AbortError') {
+      if (fullText) {
+        contentEl.textContent = fullText + '\n\n[stopped by user]';
+        history.push({ role: 'assistant', content: fullText });
+      } else {
+        contentEl.textContent = '[stopped by user]';
+      }
+      setStatus('stopped', 'error');
+    } else {
+      contentEl.textContent = "Connection issue, bud. Is the Nate server running? (" + err.message + ")";
+      setStatus('error: ' + err.message, 'error');
+    }
+  } finally {
+    setGenerating(false);
+  }
+}
+
+// Welcome message
+addMessage('system', 'Nate online. Describe what you want to build, and I\'ll dig through the toolbox.');
+
+inputEl.focus();
+</script>
+</body>
+</html>

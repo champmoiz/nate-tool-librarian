@@ -1,0 +1,7 @@
+# Nate server dependencies (Windows, Python 3.10+)
+# Install with:  pip install -r requirements.txt
+chromadb
+flask
+flask-cors
+requests
+beautifulsoup4

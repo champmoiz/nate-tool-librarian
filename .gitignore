@@ -1,0 +1,24 @@
+# Personal / IP-sensitive
+background.jpg
+.freebuff/
+
+# Backups from edits
+*.bak
+*.bak2
+*.bak3
+
+# Runtime artifacts
+*.log
+server/chroma_db/
+server/__pycache__/
+server/*.pyc
+__pycache__/
+*.pyc
+
+# Docs (screenshots — local only for now)
+docs/
+
+# Env
+.env
+.venv/
+venv/
