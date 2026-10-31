@@ -2,7 +2,7 @@
 
 ![hero](docs/hero.png)
 
-A fully offline, private AI tool librarian. Ask what you're building, it recommends from a curated library of 235 tools, draws you a pipeline diagram for multi-tool questions, checks facts, and answers in the voice of a cocky, witty Nathan-Drake-flavored assistant.
+A fully offline, private AI tool librarian. Ask what you're building, it recommends from a curated library of 236 tools, draws you a pipeline diagram for multi-tool questions, checks facts, and answers in the voice of a cocky, witty Nathan-Drake-flavored assistant.
 
 Runs entirely on your own machine. No cloud APIs, no telemetry, no accounts.
 
@@ -55,7 +55,7 @@ cd D:\Nate\server
 pip install -r requirements.txt
 ollama pull llama3.1:8b
 ollama pull nomic-embed-text
-python load-tools.py    # embeds 235 tools — takes 5–15 min first run
+python load-tools.py    # embeds 236 tools — takes 5–15 min first run
 python server.py
 ```
 
